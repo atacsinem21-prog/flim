@@ -715,3 +715,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Make saveAllAdSettings globally available
     window.saveAllAdSettings = saveAllAdSettings;
+    });
