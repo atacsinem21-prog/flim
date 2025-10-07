@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieway Admin Panel</title>
+    <link rel="stylesheet" href="/admin-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Status Bar -->
+    <div class="mobile-status-bar">
+        <div class="status-left">
+            <span class="time">19:22</span>
+        </div>
+        <div class="status-right">
+            <span class="network">0,00 K/S</span>
+            <span class="signal">Vo LTE</span>
+            <span class="signal">Vo LTE</span>
+            <span class="battery">89%</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="admin-header">
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="/" class="home-btn">
+                <i class="fas fa-home"></i>
+            </a>
+            <button class="add-btn">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        <div class="header-right">
+            <div class="user-profile">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Alert Message -->
+    <div class="alert-message">
+        <div class="alert-content">
+            <div class="alert-text">
+                Your site is not connected with Broken Link Checker. Connect now to start scanning for broken links and fix them to improve your SEO.
+            </div>
+            <button class="alert-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar" id="adminSidebar">
+            <div class="sidebar-brand">
+                <div class="brand-logo">
+                    <div class="logo-circle">
+                        <span class="logo-text">M</span>
+                    </div>
+                </div>
+                <div class="brand-name">Movieway</div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <ul class="menu-list">
+                    <li class="menu-item active" data-page="genel">
+                        <span class="menu-link">
+                            <i class="fas fa-globe menu-icon"></i>
+                            <span class="menu-text">Genel</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="anasayfa">
+                        <span class="menu-link">
+                            <i class="fas fa-home menu-icon"></i>
+                            <span class="menu-text">Anasayfa</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="ust-kisim">
+                        <span class="menu-link">
+                            <i class="fas fa-arrow-up menu-icon"></i>
+                            <span class="menu-text">Üst Kısım</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="icerik">
+                        <span class="menu-link">
+                            <i class="fas fa-thumbtack menu-icon"></i>
+                            <span class="menu-text">İçerik</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="arsiv">
+                        <span class="menu-link">
+                            <i class="fas fa-folder menu-icon"></i>
+                            <span class="menu-text">Arşiv</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="alt-kisim">
+                        <span class="menu-link">
+                            <i class="fas fa-arrow-down menu-icon"></i>
+                            <span class="menu-text">Alt Kısım</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="player">
+                        <span class="menu-link">
+                            <i class="fas fa-play menu-icon"></i>
+                            <span class="menu-text">Player</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="reklam">
+                        <span class="menu-link">
+                            <i class="fas fa-bullhorn menu-icon"></i>
+                            <span class="menu-text">Reklam</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="gorunum">
+                        <span class="menu-link">
+                            <i class="fas fa-th menu-icon"></i>
+                            <span class="menu-text">Görünüm</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="stil">
+                        <span class="menu-link">
+                            <i class="fas fa-paint-brush menu-icon"></i>
+                            <span class="menu-text">Stil</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="seo">
+                        <span class="menu-link">
+                            <i class="fas fa-chart-bar menu-icon"></i>
+                            <span class="menu-text">SEO</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="bot">
+                        <span class="menu-link">
+                            <i class="fas fa-robot menu-icon"></i>
+                            <span class="menu-text">Bot</span>
+                        </span>
+                    </li>
+                    <li class="menu-item" data-page="gelismis">
+                        <span class="menu-link">
+                            <i class="fas fa-sync-alt menu-icon"></i>
+                            <span class="menu-text">Gelişmiş</span>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <div class="content-header">
+                <h1 class="page-title" id="pageTitle">Genel Ayarlar</h1>
+            </div>
+
+            <div class="content-body" id="contentBody">
+                <!-- Genel Ayarlar İçeriği -->
+                <div class="settings-section">
+                    <h2 class="section-title">Lisans Bilgileri</h2>
+                    <div class="setting-item">
+                        <label class="setting-label">Durum:</label>
+                        <span class="setting-value status-active">Aktif</span>
+                    </div>
+                    <div class="setting-item">
+                        <label class="setting-label">Süre:</label>
+                        <span class="setting-value">Ömür Boyu</span>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2 class="section-title">İletişim Ayarları</h2>
+                    <div class="setting-item">
+                        <label class="setting-label">E-posta:</label>
+                        <input type="email" class="setting-input" value="info@movieway.com" placeholder="E-posta adresinizi girin">
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2 class="section-title">Duyuru Ayarları</h2>
+                    <div class="setting-item">
+                        <label class="setting-label">Duyuru alanını etkinleştir</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="announcementToggle" checked>
+                            <label for="announcementToggle" class="toggle-label"></label>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label class="setting-label">Tüm sayfalarda göster</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="showAllPagesToggle" checked>
+                            <label for="showAllPagesToggle" class="toggle-label"></label>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label class="setting-label">Duyuru Metni</label>
+                        <textarea class="setting-textarea" placeholder="Duyuru metninizi buraya yazın...">Sevgili İzleyicilerimiz, Movieway artık reklamsız! Bilginize, iyi seyirler dileriz.</textarea>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2 class="section-title">Favicon</h2>
+                    <div class="setting-item">
+                        <label class="setting-label">Özel Favicon</label>
+                        <input type="file" class="setting-file" accept="image/*">
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2 class="section-title">Varsayılan Gravatar</h2>
+                    <div class="setting-item">
+                        <label class="setting-label">Özel Gravatar</label>
+                        <input type="file" class="setting-file" accept="image/*">
+                    </div>
+                </div>
+
+                <div class="settings-actions">
+                    <button class="btn-reset">Ayarları Sıfırla</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <button class="nav-btn">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="nav-btn">
+            <i class="fas fa-circle"></i>
+        </button>
+        <button class="nav-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <script src="/admin-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+  "site": {
+    "title": "Movieway - Film ve Dizi Rehberi",
+    "description": "Yasal izleme platformlarındaki filmleri ve dizileri keşfedin.",
+    "email": "info@movieway.com",
+    "favicon": "",
+    "gravatar": ""
+  },
+  "announcement": {
+    "enabled": true,
+    "showAllPages": true,
+    "text": "Sevgili İzleyicilerimiz, Movieway artık reklamsız! Bilginize, iyi seyirler dileriz."
+  },
+  "homepage": {
+    "heroSection": true,
+    "platformLogos": true,
+    "popularMovies": true,
+    "moviesPerSection": 6,
+    "autoUpdate": true
+  },
+  "header": {
+    "logoText": "Movieway",
+    "menuItems": ["Yeni", "Popüler", "Filmler", "Listeler"],
+    "searchBar": true
+  },
+  "footer": {
+    "text": "© 2024 Movieway. Tüm hakları saklıdır.",
+    "socialLinks": ""
+  },
+  "player": {
+    "defaultQuality": "auto",
+    "autoPlay": false
+  },
+  "ads": {
+    "enabled": true,
+    "adSenseCode": "",
+    "topBanner": {
+      "enabled": true,
+      "code": "",
+      "height": "90px",
+      "backgroundColor": "#f0f0f0",
+      "borderRadius": "8px"
+    },
+    "bottomBanner": {
+      "enabled": true,
+      "code": "",
+      "height": "120px",
+      "backgroundColor": "#f0f0f0",
+      "borderRadius": "8px"
+    },
+    "sidebarBanner": {
+      "enabled": false,
+      "code": "",
+      "width": "300px",
+      "height": "250px",
+      "backgroundColor": "#f0f0f0",
+      "borderRadius": "8px"
+    }
+  },
+  "appearance": {
+    "themeColor": "#ffe047",
+    "darkTheme": true
+  },
+  "seo": {
+    "siteTitle": "Movieway - Film ve Dizi Rehberi",
+    "metaDescription": "Yasal izleme platformlarındaki filmleri ve dizileri keşfedin.",
+    "googleAnalytics": ""
+  },
+  "bot": {
+    "autoFetch": true,
+    "updateFrequency": 6
+  },
+  "advanced": {
+    "lastUpdated": "2024-01-01T00:00:00.000Z"
+  }
+}
