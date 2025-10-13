@@ -3,239 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movieway Admin Panel</title>
+    <title>Admin Panel - Movieway</title>
     <link rel="stylesheet" href="/admin-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Mobile Status Bar -->
-    <div class="mobile-status-bar">
-        <div class="status-left">
-            <span class="time">19:22</span>
-        </div>
-        <div class="status-right">
-            <span class="network">0,00 K/S</span>
-            <span class="signal">Vo LTE</span>
-            <span class="signal">Vo LTE</span>
-            <span class="battery">89%</span>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="admin-header">
-        <div class="header-left">
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <a href="/" class="home-btn">
-                <i class="fas fa-home"></i>
-            </a>
-            <button class="add-btn">
-                <i class="fas fa-plus"></i>
-            </button>
-        </div>
-        <div class="header-right">
-            <div class="user-profile">
-                <i class="fas fa-user"></i>
-            </div>
-        </div>
-    </header>
-
-    <!-- Alert Message -->
-    <div class="alert-message">
-        <div class="alert-content">
-            <div class="alert-text">
-                Your site is not connected with Broken Link Checker. Connect now to start scanning for broken links and fix them to improve your SEO.
-            </div>
-            <button class="alert-close">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- Main Container -->
     <div class="admin-container">
         <!-- Sidebar -->
-        <aside class="admin-sidebar" id="adminSidebar">
-            <div class="sidebar-brand">
-                <div class="brand-logo">
-                    <div class="logo-circle">
-                        <span class="logo-text">M</span>
-                    </div>
-                </div>
-                <div class="brand-name">Movieway</div>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-film"></i> Movieway Admin</h2>
             </div>
-
-            <nav class="sidebar-menu">
-                <ul class="menu-list">
-                    <li class="menu-item active" data-page="genel">
-                        <span class="menu-link">
-                            <i class="fas fa-globe menu-icon"></i>
-                            <span class="menu-text">Genel</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="anasayfa">
-                        <span class="menu-link">
-                            <i class="fas fa-home menu-icon"></i>
-                            <span class="menu-text">Anasayfa</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="ust-kisim">
-                        <span class="menu-link">
-                            <i class="fas fa-arrow-up menu-icon"></i>
-                            <span class="menu-text">Üst Kısım</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="icerik">
-                        <span class="menu-link">
-                            <i class="fas fa-thumbtack menu-icon"></i>
-                            <span class="menu-text">İçerik</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="arsiv">
-                        <span class="menu-link">
-                            <i class="fas fa-folder menu-icon"></i>
-                            <span class="menu-text">Arşiv</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="alt-kisim">
-                        <span class="menu-link">
-                            <i class="fas fa-arrow-down menu-icon"></i>
-                            <span class="menu-text">Alt Kısım</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="player">
-                        <span class="menu-link">
-                            <i class="fas fa-play menu-icon"></i>
-                            <span class="menu-text">Player</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="reklam">
-                        <span class="menu-link">
-                            <i class="fas fa-bullhorn menu-icon"></i>
-                            <span class="menu-text">Reklam</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="gorunum">
-                        <span class="menu-link">
-                            <i class="fas fa-th menu-icon"></i>
-                            <span class="menu-text">Görünüm</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="stil">
-                        <span class="menu-link">
-                            <i class="fas fa-paint-brush menu-icon"></i>
-                            <span class="menu-text">Stil</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="seo">
-                        <span class="menu-link">
-                            <i class="fas fa-chart-bar menu-icon"></i>
-                            <span class="menu-text">SEO</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="bot">
-                        <span class="menu-link">
-                            <i class="fas fa-robot menu-icon"></i>
-                            <span class="menu-text">Bot</span>
-                        </span>
-                    </li>
-                    <li class="menu-item" data-page="gelismis">
-                        <span class="menu-link">
-                            <i class="fas fa-sync-alt menu-icon"></i>
-                            <span class="menu-text">Gelişmiş</span>
-                        </span>
-                    </li>
-                </ul>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-page="dashboard">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item" data-page="films">
+                    <i class="fas fa-video"></i>
+                    <span>Filmler</span>
+                </a>
+                <a href="#" class="nav-item" data-page="settings">
+                    <i class="fas fa-cog"></i>
+                    <span>Ayarlar</span>
+                </a>
             </nav>
-        </aside>
+        </div>
 
         <!-- Main Content -->
-        <main class="admin-main">
-            <div class="content-header">
-                <h1 class="page-title" id="pageTitle">Genel Ayarlar</h1>
-            </div>
-
-            <div class="content-body" id="contentBody">
-                <!-- Genel Ayarlar İçeriği -->
-                <div class="settings-section">
-                    <h2 class="section-title">Lisans Bilgileri</h2>
-                    <div class="setting-item">
-                        <label class="setting-label">Durum:</label>
-                        <span class="setting-value status-active">Aktif</span>
-                    </div>
-                    <div class="setting-item">
-                        <label class="setting-label">Süre:</label>
-                        <span class="setting-value">Ömür Boyu</span>
-                    </div>
+        <div class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1 id="pageTitle">Dashboard</h1>
                 </div>
-
-                <div class="settings-section">
-                    <h2 class="section-title">İletişim Ayarları</h2>
-                    <div class="setting-item">
-                        <label class="setting-label">E-posta:</label>
-                        <input type="email" class="setting-input" value="info@movieway.com" placeholder="E-posta adresinizi girin">
-                    </div>
+                <div class="header-right">
+                    <a href="/" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Siteyi Görüntüle
+                    </a>
                 </div>
+            </header>
 
-                <div class="settings-section">
-                    <h2 class="section-title">Duyuru Ayarları</h2>
-                    <div class="setting-item">
-                        <label class="setting-label">Duyuru alanını etkinleştir</label>
-                        <div class="toggle-switch">
-                            <input type="checkbox" id="announcementToggle" checked>
-                            <label for="announcementToggle" class="toggle-label"></label>
+            <!-- Content -->
+            <div class="content" id="contentBody">
+                <!-- Dashboard Content -->
+                <div id="dashboard-content" class="page-content active">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="totalFilms">0</h3>
+                                <p>Toplam Film</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="totalViews">0</h3>
+                                <p>Toplam İzlenme</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="totalFavorites">0</h3>
+                                <p>Favoriler</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="setting-item">
-                        <label class="setting-label">Tüm sayfalarda göster</label>
-                        <div class="toggle-switch">
-                            <input type="checkbox" id="showAllPagesToggle" checked>
-                            <label for="showAllPagesToggle" class="toggle-label"></label>
+
+                    <div class="recent-films">
+                        <h2>Son Eklenen Filmler</h2>
+                        <div id="recentFilmsList" class="films-list">
+                            <!-- Films will be loaded here -->
                         </div>
                     </div>
-                    <div class="setting-item">
-                        <label class="setting-label">Duyuru Metni</label>
-                        <textarea class="setting-textarea" placeholder="Duyuru metninizi buraya yazın...">Sevgili İzleyicilerimiz, Movieway artık reklamsız! Bilginize, iyi seyirler dileriz.</textarea>
+                </div>
+
+                <!-- Films Content -->
+                <div id="films-content" class="page-content">
+                    <div class="page-header">
+                        <h2>Film Yönetimi</h2>
+                        <button class="btn btn-primary" onclick="showAddFilmModal()">
+                            <i class="fas fa-plus"></i>
+                            Yeni Film Ekle
+                        </button>
+                    </div>
+
+                    <div class="films-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Poster</th>
+                                    <th>Başlık</th>
+                                    <th>Tür</th>
+                                    <th>Yıl</th>
+                                    <th>IMDb</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody id="filmsTableBody">
+                                <!-- Films will be loaded here -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
-                <div class="settings-section">
-                    <h2 class="section-title">Favicon</h2>
-                    <div class="setting-item">
-                        <label class="setting-label">Özel Favicon</label>
-                        <input type="file" class="setting-file" accept="image/*">
+                <!-- Settings Content -->
+                <div id="settings-content" class="page-content">
+                    <div class="page-header">
+                        <h2>Site Ayarları</h2>
                     </div>
-                </div>
 
-                <div class="settings-section">
-                    <h2 class="section-title">Varsayılan Gravatar</h2>
-                    <div class="setting-item">
-                        <label class="setting-label">Özel Gravatar</label>
-                        <input type="file" class="setting-file" accept="image/*">
+                    <div class="settings-form">
+                        <div class="form-group">
+                            <label for="siteTitle">Site Başlığı</label>
+                            <input type="text" id="siteTitle" placeholder="Movieway">
+                        </div>
+                        <div class="form-group">
+                            <label for="siteDescription">Site Açıklaması</label>
+                            <textarea id="siteDescription" placeholder="En yeni filmleri HD kalitede izleyin" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="heroTitle">Hero Başlığı</label>
+                            <input type="text" id="heroTitle" placeholder="En Yeni Filmler">
+                        </div>
+                        <div class="form-group">
+                            <label for="heroSubtitle">Hero Alt Başlığı</label>
+                            <input type="text" id="heroSubtitle" placeholder="HD kalitede, ücretsiz film izleme deneyimi">
+                        </div>
+                        <div class="form-group">
+                            <label for="heroBackground">Hero Arka Plan</label>
+                            <input type="url" id="heroBackground" placeholder="https://example.com/image.jpg">
+                        </div>
+                        <button class="btn btn-primary" onclick="saveSettings()">
+                            <i class="fas fa-save"></i>
+                            Ayarları Kaydet
+                        </button>
                     </div>
-                </div>
-
-                <div class="settings-actions">
-                    <button class="btn-reset">Ayarları Sıfırla</button>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
 
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-        <button class="nav-btn">
-            <i class="fas fa-arrow-left"></i>
-        </button>
-        <button class="nav-btn">
-            <i class="fas fa-circle"></i>
-        </button>
-        <button class="nav-btn">
-            <i class="fas fa-bars"></i>
-        </button>
+    <!-- Add Film Modal -->
+    <div id="addFilmModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Yeni Film Ekle</h3>
+                <button class="close-btn" onclick="closeAddFilmModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="addFilmForm">
+                    <div class="form-group">
+                        <label for="filmTitle">Film Başlığı *</label>
+                        <input type="text" id="filmTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="filmDescription">Açıklama</label>
+                        <textarea id="filmDescription" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="filmVideoLink">Video Link *</label>
+                        <input type="url" id="filmVideoLink" required placeholder="https://vidrame.pro/vr/xxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label for="filmPosterUrl">Poster URL</label>
+                        <input type="url" id="filmPosterUrl" placeholder="https://example.com/poster.jpg">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="filmYear">Yıl</label>
+                            <input type="number" id="filmYear" min="1900" max="2030">
+                        </div>
+                        <div class="form-group">
+                            <label for="filmGenre">Tür</label>
+                            <input type="text" id="filmGenre" placeholder="Aksiyon, Komedi, Dram">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="filmImdbRating">IMDb Puanı</label>
+                            <input type="number" id="filmImdbRating" step="0.1" min="0" max="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="filmDirector">Yönetmen</label>
+                            <input type="text" id="filmDirector">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="filmCast">Oyuncular</label>
+                        <input type="text" id="filmCast" placeholder="Oyuncu 1, Oyuncu 2, Oyuncu 3">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closeAddFilmModal()">İptal</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i>
+                            Film Ekle
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification"></div>
 
     <script src="/admin-script.js"></script>
 </body>

@@ -419,6 +419,8 @@ app.get('/movie/:id', async (req, res) => {
         console.log('🎬 Video link: ${film.videoLink || ''}');
         
         </script>
+            
+            if (!currentFilm.videoLink) {
                 alert('Video linki bulunamadı!');
                 return;
             }

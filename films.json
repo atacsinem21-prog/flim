@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1760286632021,
+    "title": "Test Film",
+    "description": "Test filmi için örnek açıklama",
+    "videoLink": "https://vidmoly.net/embed-ncrk4crf0sq5.html",
+    "posterUrl": "https://images.unsplash.com/photo-1489599808426-7a6c86d4c3b8?w=400&h=600&fit=crop",
+    "year": "2024",
+    "genre": "Aksiyon, Macera",
+    "imdbRating": "8.5",
+    "director": "Test Yönetmen",
+    "cast": "Test Oyuncu 1, Test Oyuncu 2",
+    "createdAt": "2025-10-12T16:30:32.021Z"
+  },
+  {
+    "id": 1760286632022,
+    "title": "YouTube Test",
+    "description": "YouTube embed testi",
+    "videoLink": "https://www.youtube.com/embed/WNlKgGwRWIQ",
+    "posterUrl": "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=400&h=600&fit=crop",
+    "year": "2024",
+    "genre": "Test",
+    "imdbRating": "9.0",
+    "director": "Test Director",
+    "cast": "Test Cast",
+    "createdAt": "2025-10-12T16:35:00.000Z"
+  },
+  {
+    "id": 1760286632023,
+    "title": "Vidmoly Test 2",
+    "description": "Farklı Vidmoly linki",
+    "videoLink": "https://vidmoly.net/embed-ncrk4crf0sq5.html",
+    "posterUrl": "https://images.unsplash.com/photo-1489599808426-7a6c86d4c3b8?w=400&h=600&fit=crop",
+    "year": "2024",
+    "genre": "Test",
+    "imdbRating": "8.0",
+    "director": "Test Director",
+    "cast": "Test Cast",
+    "createdAt": "2025-10-12T16:40:00.000Z"
+  },
+  {
+    "id": 1760286632024,
+    "title": "Vidrame Test",
+    "description": "Vidrame player testi",
+    "videoLink": "https://vidrame.pro/embed/fa840394",
+    "posterUrl": "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=400&h=600&fit=crop",
+    "year": "2024",
+    "genre": "Test",
+    "imdbRating": "7.5",
+    "director": "Test Director",
+    "cast": "Test Cast",
+    "createdAt": "2025-10-12T16:45:00.000Z"
+  }
+]

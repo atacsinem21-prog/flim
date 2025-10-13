@@ -3,13 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film Projesi</title>
+    <title>Movieway - HD Film İzle</title>
+    <meta name="description" content="HD kalitede film izleyin">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Hoş geldiniz!</h1>
-    <p>Film projesi sayfasına hoş geldiniz.</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iI0ZGNkI2QiIvPgo8cGF0aCBkPSJNMTIgMTJIMjhWMjhIMTJWMTJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTYgMTZIMjRWMjBIMTZWMjRIMjBWMjBIMjRWMjRIMjBWMjBIMTZWMjRaIiBmaWxsPSIjRkY2QjZCIi8+Cjwvc3ZnPgo=" alt="Movieway">
+                        <span>Movieway</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a href="/" class="nav-link">Ana Sayfa</a>
+                    <a href="/admin" class="nav-link">Admin</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <!-- JavaScript dosyasını bağla -->
-    <script src="index.js"></script>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">HD Film İzle</h1>
+                <p class="hero-subtitle">En yeni filmleri HD kalitede izleyin</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <h2>Filmler</h2>
+            <div class="movies-grid" id="moviesGrid">
+                <!-- Filmler buraya yüklenecek -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hakkımızda</h3>
+                    <p>HD kalitede film izleme deneyimi</p>
+                </div>
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <p>info@movieway.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/app.js"></script>
 </body>
 </html>

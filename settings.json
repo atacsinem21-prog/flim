@@ -1,0 +1,12 @@
+{
+  "site": {
+    "title": "Movieway",
+    "description": "En yeni filmleri HD kalitede izleyin",
+    "logo": "/logo.png"
+  },
+  "hero": {
+    "title": "En Yeni Filmler",
+    "subtitle": "HD kalitede, ücretsiz film izleme deneyimi",
+    "backgroundImage": "https://images.unsplash.com/photo-1489599808426-7a6c86d4c3b8?w=1920&h=1080&fit=crop"
+  }
+}
